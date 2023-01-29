@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../data/lsws-vhosts/squadbude-webseite/webroot"
+		}
+	],
+	"settings": {}
+}

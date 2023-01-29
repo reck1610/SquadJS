@@ -1,8 +1,6 @@
-import BasePlugin from './base-plugin.js';
+import BasePlugin from '../base-plugin.js';
 
-import { COPYRIGHT_MESSAGE } from '../utils/constants.js';
-
-export default class DiscordBasePlugin extends BasePlugin {
+export default class DiscordBasePlugin2 extends BasePlugin {
   static get optionsSpecification() {
     return {
       discordClient: {
@@ -19,9 +17,6 @@ export default class DiscordBasePlugin extends BasePlugin {
   }
 
   async sendDiscordMessage(message) {
-    if (typeof message === 'object' && 'embed' in message)
-      message.embed.footer = message.embed.footer || { text: COPYRIGHT_MESSAGE };
-
     await this.channel.send(message);
   }
 }
